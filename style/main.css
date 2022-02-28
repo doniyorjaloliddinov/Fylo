@@ -1,0 +1,172 @@
+/* FONTS */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/livvic-v11-latin-regular.woff2") format("woff2"), 
+       url("../fonts/livvic-v11-latin-regular.woff") format("woff"); 
+}
+
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/livvic-v11-latin-600.woff2") format("woff2"), 
+       url("../fonts/livvic-v11-latin-600.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700; 
+  src: url("../fonts/livvic-v11-latin-700.woff2") format("woff2"), 
+       url("../fonts/livvic-v11-latin-700.woff") format("woff"); 
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Livvic";
+}
+
+.container {
+  width: 1220px;
+  padding: 0 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+/* DIRECTORY */
+.directory {
+  width: 100%;
+  height: 1200px;
+  background-image: url(../img/directory-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.directory-wrapper {
+  padding-top: 140px;
+}
+
+.all-dir-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.directory-heading {
+  font-style: normal;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.directory-list-wrapper {
+  width: 350px;
+  height: 250px;
+  margin-top: 60px;
+  background-color: rgb(1, 47, 52);
+  overflow: hidden;
+}
+
+.directory-list {
+  width: 350px;
+  height: 250px;
+  padding-top: 35px;
+  padding-left: 125px;
+}
+
+.drake-wrapper {
+  padding-left: 100px;
+}
+
+.dir-list-item-hover {
+  width: 350px;
+  height: 250px;
+  padding: 1px 15px 80px 50px;
+  margin-left: -5px;
+}
+
+
+.dir-list-name {
+  margin-bottom: 0;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(121, 200, 199);
+}
+
+.dir-list-prof {
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgb(255, 255, 255);
+}
+
+
+.dir-list-img {
+  width: 95px;
+  height: 95px;
+}
+
+.drake {
+  margin-left: 25px;
+}
+
+.addan {
+  border: 2px solid #C4FFFE;
+  border-radius: 50%;
+}
+
+.directory-list:hover {
+  margin-top: -250px;
+  padding-left: 0;
+  transition: 0.5s ease;
+}
+
+.dir-hidden-name {
+  margin-top: 100px;
+  font-style: normal;
+  color: rgb(121, 200, 199);
+}
+
+.hidden-blockq {
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.dir-hidden-socnet {
+  width: 100px;
+  justify-content: space-between;
+  list-style-type: none;
+  display: flex;
+}
+
+.dir-list-circle {
+  width: 56px;
+  height: 56px;
+  margin-top: -30px;
+  margin-left: 150px;
+  padding-top: 17px;
+  padding-left: 22px;
+  background: rgb(246, 126, 126);
+  border-radius: 50%;
+}
+
+.dir-list-circle:hover {
+  transform: rotate(45deg);
+  background-color: rgb(121, 200, 199);
+} 
+/* //DIRECTORY */
