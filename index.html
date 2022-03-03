@@ -11,30 +11,35 @@
   <title>Fylo</title>
   <link rel="icon" type="image/svg" href="./img/site-logo.svg">
   <link rel="stylesheet" href="style/normalize.css">
-  <link rel="stylesheet" href="style/main.min.css">
-  <!-- <link rel="stylesheet" href="style/main.css"> -->
+  <!-- <link rel="stylesheet" href="style/main.min.css"> -->
+  <link rel="stylesheet" href="style/main.css">
 </head>
 
 <body>
   <header class="header-wrapper">
     <div class="header-wrapper__container container">
+      <h1 class="site-heading-hidden">"My team" site heading</h1>
       <div class="header-wrapper__header-inner header-inner">
         <div class="header-inner__logo-nav-wrapper logo-nav-wrapper">
-          <img class="logo-nav-wrapper__site-logo site-logo" src="./img/logo.svg" alt="site logo" width="160" height="40">
+          <a class="logo-nav-wrapper__site-logo-link site-logo-link " href="index.html">
+            <img class="logo-nav-wrapper__site-logo site-logo" src="./img/logo.svg" alt="site logo" width="160" height="40">
+          </a>  
           <nav class="logo-nav-wrapper__navbar navbar">
             <ul class="logo-nav-wrapper-navbar__list navbar-list">
               <li class="logo-nav-wrapper-navbar__list-item navbar-list-item">
-                <a class="navbar-list-item-link item-link" href="#">home</a>
+                <a class="navbar-list-item-link item-link header-links" href="index.html">home</a>
               </li>
 
               <li class="logo-nav-wrapper-navbar__list-item navbar-list-item">
-                <a class="navbar-list-item-link item-link" href="directory.html" >about</a>
+                <a class="navbar-list-item-link item-link header-links" href="directory.html" >about</a>
               </li>
 
             </ul>
           </nav>
         </div>
-        <a class="header-inner-btn" href="contact.html" >contact</a>
+        <div class="header-inner__btn-wrapper btn-wrapper">
+          <a class="btn-wrapper__btn header-btn header-links" href="contact.html" >contact us</a>
+        </div>
       </div>
     </div>
   </header>
