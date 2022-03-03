@@ -39,6 +39,16 @@ body {
   margin-left: auto;
 }
 
+/* HEADER */
+.header-inner {
+  background-color:  rgb(1, 78, 86);
+  display: flex;
+}
+
+.logo-nav-wrapper {
+  display: flex;
+}
+/* //HEADER */
 
 
 /* DIRECTORY */
