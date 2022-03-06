@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  width: 1220px;
+  max-width: 1220px;
   padding: 0 20px;
   margin-right: auto;
   margin-left: auto;
@@ -110,14 +110,23 @@ a {
 /* DIRECTORY */
 .directory {
   width: 100%;
-  height: 1200px;
-  background-image: url(../img/directory-bg-img.png);
+  background-color:  rgb(0, 64, 71);
+  background-image: url("../img/dir-top-bg-img.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: calc(50% - 715px) top;
 }
 
 .directory-wrapper {
   padding-top: 140px;
+  padding-bottom: 20px;
+}
+
+.dir-bottom-bgimg-wrapper {
+  width: 100%;
+  height: 100px;
+  background-image: url("../img/dir-bottom-bgimg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 665px) bottom;
 }
 
 .all-dir-list-wrapper {
@@ -241,21 +250,20 @@ a {
 /* HERO */
 .hero-wrapper {
   width: 100%;
-  padding-bottom: 140px;
   background-color: rgb(1, 78, 86);;
-  /* background-image: url(../img/bg-img-first.png);
-  background-image: url(../img/bg-img-second.jpg); */
+  background-image: url("../img/hero-sec-bgim.png");
   background-repeat: no-repeat;
-  
+  background-position: calc(50% - 740px) top;
 }
 
 .hero-inner {
+  padding-bottom: 140px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-image: url(../img/hero-bg-img.png);
+  background-image: url("../img/herobg.png");
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-position: calc(50% + 350px) bottom;
 }
 
 .hero-inner__heading {
@@ -297,6 +305,9 @@ a {
 .built-team-wrapper {
   padding-bottom: 140px;
   background-color: rgb(1, 47, 52);
+  background-image: url("../img/b-team-bgimg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 715px) bottom;
 }
 
 .bteam-inner {
@@ -361,9 +372,26 @@ a {
 
 /* CUSTOMER-FEEDBACK */
 .customer-feedback-wrapper {
-  padding-top: 140px;
-  padding-bottom: 150px;
   background-color: rgb(0, 64, 71);
+  background-image: url("../img/feedback-topbgimg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 650px) top;
+}
+
+.feedback-bottom-bgimg {
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/feedback-botttom.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 615px) bottom;
+}
+
+.cfeedback-inner {
+  padding-top: 140px;
+  /* padding-bottom: 150px; */
+  /* background-image: url("../img/feedback-botttom.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 490px) bottom; */
 }
 
 .cfeedback-heading {
@@ -382,6 +410,13 @@ a {
 .cfeedback-list {
   display: flex;
   justify-content: space-between;
+}
+
+.cfeedback-item {
+  padding-top: 30px;
+  background-image: url("../img/quotes.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 20px) top;
 }
 
 .item-info {
@@ -425,6 +460,9 @@ a {
 .contact-link-sender-wrapper {
   padding: 75px 260px;
   background-color: rgb(246, 126, 126);
+  background-image: url("../img/contact-link-bgimg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 618px) bottom;
 }
 
 .send-inner {
@@ -500,6 +538,9 @@ a {
   padding-top: 120px;
   padding-bottom: 120px; 
   background-color: rgb(1, 78, 86);
+  background-image: url("../img/about-bgimg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 715px) bottom;
 }
 
 .inner-wrappper {
@@ -543,6 +584,9 @@ a {
   padding-top: 140px;
   padding-bottom: 150px;
   background-color: rgb(1, 47, 52);
+  background-image: url("../img/clients-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 615px) top;
 }
 
 .inner__heading {
@@ -561,10 +605,23 @@ a {
 
 
 /* CONTACT-US */
-.contact-wrapper {
-  padding-top: 90px;
+.contact-page-header {
   padding-bottom: 120px;
+}
+
+.contact-wrapper {
   background-color: rgb(1, 78, 86);
+  background-image: url("../img/contact-top-bgimg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 760px) top;
+}
+
+.contact-page-bottom-bgimg {
+  width: 100%;
+  height: 250px;
+  background-image: url("../img/contact-bottom-bgimg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 770px) bottom;
 }
 
 .contact-inner {
@@ -574,7 +631,7 @@ a {
 }
 
 .ask-heading {
-  margin-bottom: 0;
+  margin: 0;
   font-size: 64px;
   line-height: 100px;
   color: rgb(255, 255, 255);
@@ -587,14 +644,14 @@ a {
   color: rgb(246, 126, 126);
 }
 
-.ask-list {
-  
-}
-
 .ask-item {
   margin-top: 15px;
   display: flex;
   align-items: center;
+}
+
+.name-item {
+  margin-top: 0;
 }
 
 .ask-img {
@@ -642,6 +699,14 @@ a {
   font-size: 18px;
   line-height: 28px;
   color: rgb(0, 64, 71);
+  cursor: pointer;
 }
 
 /* CONTACT-US */
+
+
+@media (max-width: 699px) {
+
+}
+
+
