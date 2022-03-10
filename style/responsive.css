@@ -10,6 +10,13 @@
   }
 }
 
+
+@media only screen and (max-width: 1090px) {
+  .all-dir-list-wrapper {
+    justify-content: space-around;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .hero-wrapper {
     background-image: none;
@@ -45,7 +52,15 @@
   .send-inner {
     margin-left: 0;
   }
+
+  .all-dir-list-wrapper {
+    justify-content: space-around;
+  }
   
+  .ask-info {
+    margin: 0;
+  }
+
 }
 
 @media only screen and (max-width: 942px) {
@@ -90,12 +105,39 @@
   .btn-wrapper {
     margin-right: 50px;
   }
+
+  .about-wrapper {
+    padding-top: 0;
+  }
+
+  .inner-wrappper {
+    flex-direction: column;
+  }
+
+  .contact-inner {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .customer-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customer-item {
+    margin-top: 15px;
+  }
+
+
 }
 
 @media only screen and (max-width: 768px) {
   .navbar {
     display: none;
   }
+
+  
 
   .btn-wrapper {
     display: none;
@@ -131,6 +173,7 @@
 
   .footer-navbar {
     display: inline-block;
+    margin-left: 15px;
   }
 
   .footer-soc-net-wrapper {
@@ -172,6 +215,11 @@
   .contact-link-sender-heading {
     line-height: 12px;       
   }
+
+  .all-input {
+    max-width: 450px;
+    padding-right: 300px;
+  }
 }
 
 @media only screen and (max-width: 505px) {
@@ -191,6 +239,7 @@
   
   .bteam-inner {
     margin-left: 0;
+    margin-right: 0;
   }
 
   .bteam-heading {
@@ -217,29 +266,65 @@
     font-size: 12px;
     line-height: 18px;
   }
+  
+  .wrapper-heading {
+    font-size: 55px;
+    line-height: 80px;
+  }
+
+  .about-info {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .all-input {
+    max-width: 390px;
+    padding-right: 265px;
+  }
 }
 
-/* @media only screen and (max-width: 320px) {
-  .bteam-heading {
-    font-size: 12px;
-    line-height: 16px;
+@media only screen and (max-width: 396px) {
+  .bteam-inner {
+    margin-right: 0;
   }
 
-  .info-heading {
-    font-size: 10px;
-    line-height: 16px;
+  .directory-heading {
+    font-size: 38px;
+    line-height: 32px;
   }
 
-  .bteam-content {
-    font-size: 8px;
-    line-height: 10px;
+  .ask-heading {
+    font-size: 58px;
+    line-height: 95px;
   }
 
-  .bteam-inner__item-img {
-    width: 45px;
-    height: 25px;
+  .ask-info {
+    font-size: 28px;
+    line-height: 42px;
   }
-} */
+
+  .all-input {
+    max-width: 320px;
+    padding-right: 190px;
+  }
+
+  .form-btn {
+    width: 100px;
+    height: 40px;
+  }
+}
 
 
-/* responsive */
+@media only screen and (max-width: 320px) {
+  .item-img { 
+    margin-left: 92px;  
+}
+  .directory-wrapper {
+    width: 250px;
+  }
+
+  .inner-heading {
+    font-size: 38px;
+    line-height: 36px;
+  }
+}
